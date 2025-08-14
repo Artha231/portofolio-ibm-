@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio — Arta Suratinoyo</title>
+  <meta name="description" content="Portfolio pribadi Arta Suratinoyo — developer & student.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="container header">
+    <nav class="nav">
+      <a href="#" class="brand">Arta<span>.</span></a>
+      <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+      <ul class="links">
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#skills">Skill</a></li>
+        <li><a href="#projects">Proyek</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <h1>Halo, saya <span>Arta Suratinoyo</span></h1>
+      <p>Mahasiswa Informatika & web developer. Suka membangun aplikasi kecil yang rapi, cepat, dan accessible.</p>
+      <div class="cta">
+        <a class="btn" href="#projects">Lihat Proyek</a>
+        <a class="btn outline" href="suratinoyo@gmail.com">Hubungi</a>
+      </div>
+    </section>
+  </header>
+
+  <main class="container">
+    <section id="about" class="section">
+      <h2>Tentang Saya</h2>
+      <p>
+       Saya seorang pengembang web front-end dan full-stack ringan dengan fokus pada keamanan siber. Portofolio ini dibuat sebagai Static Landing Page tanpa backend, menghadirkan interaksi UI sederhana, dan dapat dideploy dengan aman ke Netlify atau Vercel.
+      </p>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skill Utama</h2>
+      <ul class="chips">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li>
+        <li>Golang (CLI/API)</li><li>Laravel</li><li>Next.js</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Proyek Unggulan</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Manajemen Data Pasien (Golang)</h3>
+          <p>Aplikasi CLI dengan pencarian, pengurutan, dan penyimpanan JSON (tanpa break/continue).</p>
+          <p class="meta">Teknologi: Go, JSON I/O</p>
+          <div class="actions">
+            <a class="btn sm" href="#" target="_blank" rel="noreferrer">Repo</a>
+            <a class="btn sm outline" href="#" target="_blank" rel="noreferrer">Demo</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Dashboard Laravel</h3>
+          <p>Dashboard sederhana terintegrasi database & chart.</p>
+          <p class="meta">Teknologi: PHP, Laravel, MySQL</p>
+          <div class="actions">
+            <a class="btn sm" href="#" target="_blank" rel="noreferrer">Repo</a>
+            <a class="btn sm outline" href="#" target="_blank" rel="noreferrer">Demo</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>AI Waifu Chatbot</h3>
+          <p>Chatbot front‑end (Next.js) terhubung API model (Granite/Replicate) — AI hanya dipakai pada fase pengembangan.</p>
+          <p class="meta">Teknologi: Next.js, API, TTS</p>
+          <div class="actions">
+            <a class="btn sm" href="#" target="_blank" rel="noreferrer">Repo</a>
+            <a class="btn sm outline" href="#" target="_blank" rel="noreferrer">Demo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Kontak</h2>
+      <form class="contact" onsubmit="return handleSubmit(event)">
+        <input type="text" placeholder="Nama" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Pesan" rows="4" required></textarea>
+        <button class="btn" type="submit">Kirim</button>
+        <p class="hint">*Form ini hanya simulasi (tanpa backend). Pesan akan ditampilkan sebagai notifikasi.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <small>© 2025 Arta Suratinoyo — Dibangun sebagai Static Landing Page. Deploy di Netlify/Vercel.</small>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
